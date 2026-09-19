@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis XV Años</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pantalla 1: Sobre Interactivo -->
+  <section id="pantalla-sobre" onclick="abrirInvitacion()">
+    <div class="sobre">
+      <div class="sello">🐸</div>
+      <p>Toca el sobre</p>
+    </div>
+  </section>
+
+  <!-- Pantalla 2: Contenido Principal -->
+  <main id="invitacion" class="oculto">
+    <audio id="musica-fondo" src="evangeline.mp3" loop></audio>
+
+    <header class="hero">
+      <h1>Mis XV Años</h1>
+      <h2>Illary Alexandra</h2>
+    </header>
+
+    <!-- Regresiva -->
+    <section class="contador-container">
+      <h3>Tan solo falta</h3>
+      <div id="reloj">
+        <span id="dias">00</span>d : 
+        <span id="horas">00</span>h : 
+        <span id="minutos">00</span>m : 
+        <span id="segundos">00</span>s
+      </div>
+    </section>
+
+    <!-- Botones Interactivos -->
+    <section class="acciones">
+      <a href="https://maps.google.com" target="_blank" class="btn">Cómo llegar</a>
+      <a href="https://wa.me/1234567890?text=Hola,%20confirmo%20mi%20asistencia" target="_blank" class="btn btn-confirmar">Confirmar Asistencia</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
